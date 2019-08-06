@@ -1,0 +1,19 @@
+[package]
+name = "rust-js-test"
+version = "0.1.0"
+authors = ["Julius de Bruijn <bruijn@prisma.io>"]
+license = "MIT"
+build = "build.rs"
+exclude = ["artifacts.json", "index.node"]
+edition = "2018"
+
+[lib]
+name = "rust_js_test"
+crate-type = ["dylib"]
+
+[build-dependencies]
+neon-build = "0.2.0"
+
+[dependencies]
+neon = "0.2.0"
+prisma-query = { git = "https://github.com/prisma/prisma-query.git" }

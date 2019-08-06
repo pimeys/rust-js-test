@@ -1,0 +1,14 @@
+{
+  "name": "rust-js-test",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "author": "Julius de Bruijn <bruijn@prisma.io>",
+  "license": "MIT",
+  "dependencies": {
+    "neon-cli": "^0.2.0"
+  },
+  "scripts": {
+    "install": "neon build"
+  }
+}
